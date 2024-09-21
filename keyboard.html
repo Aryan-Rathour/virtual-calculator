@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keyboard</title>
+        <link rel="stylesheet" href="keyboard.css"><link>
+    </head>
+    <body>
+        <div class="container">
+            <input id="display" type="text" readonly>
+            <div class="row one">
+                <button onclick="appendToDisplay('`')">`</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('=')">=</button>
+                <button id="back" onclick="backspace()">backspace</button>
+            </div>
+            <div class="row two">
+                <button id="tab">tab</button>
+                <button onclick="appendToDisplay('Q')">Q</button>
+                <button onclick="appendToDisplay('W')">W</button>
+                <button onclick="appendToDisplay('E')">E</button>
+                <button onclick="appendToDisplay('R')">R</button>
+                <button onclick="appendToDisplay('T')">T</button>
+                <button onclick="appendToDisplay('Y')">Y</button>
+                <button onclick="appendToDisplay('U')">U</button>
+                <button onclick="appendToDisplay('I')">I</button>
+                <button onclick="appendToDisplay('O')">O</button>
+                <button onclick="appendToDisplay('P')">P</button>
+                <button onclick="appendToDisplay('[]')">[</button>
+                <button onclick="appendToDisplay(']')">]</button>
+                <button id="backslash" onclick="appendToDisplay('\')">\</button>
+            </div>
+            <div class="row three">
+                <button id="caps">caps lock</button>
+                <button ONCLICK="appendToDisplay('A')">A</button>
+                <button onclick="appendToDisplay('S')">S</button>
+                <button onclick="appendToDisplay('D')">D</button>
+                <button onclick="appendToDisplay('F')">F</button>
+                <button onclick="appendToDisplay('G')">G</button>
+                <button onclick="appendToDisplay('H')">H</button>
+                <button onclick="appendToDisplay('J')">J</button>
+                <button onclick="appendToDisplay('K')">K</button>
+                <button onclick="appendToDisplay('L')">L</button>
+                <button onclick="appendToDisplay(';')">;</button>
+                <button onclick="appendToDisplay(''')">'</button>
+                <button id="enter">enter</button>
+            </div>
+            <div class="row four">
+                <button class="shift">shift</button>
+                <button ONCLICK="appendToDisplay('Z')">Z</button>
+                <button ONCLICK="appendToDisplay('X')">X</button>
+                <button ONCLICK="appendToDisplay('C')">C</button>
+                <button ONCLICK="appendToDisplay('V')">V</button>
+                <button ONCLICK="appendToDisplay('B')">B</button>
+                <button ONCLICK="appendToDisplay('N')">N</button>
+                <button ONCLICK="appendToDisplay('M')">M</button>
+                <button ONCLICK="appendToDisplay(',')">,</button>
+                <button ONCLICK="appendToDisplay('.')">.</button>
+                <button ONCLICK="appendToDisplay('/')">/</button>
+                <button class="shift">shift</button>
+            </div>
+            <div class="row five">
+                <button class="other">ctrl</button>
+                <button class="other">fn</button>
+                <button class="other">win</button>
+                <button class="other">alt</button>
+                <button id="space">space</button>
+                <button class="other">alt</button>
+                <button class="other">ctrl</button>
+            </div>
+        </div>
+        <script>
+            function appendToDisplay(value){
+                document.getElementById('display').value += value;
+            }
+
+            function backspace(){
+                document.getElementById('')
+            }
+        </script>
+    </body>
+</html>
